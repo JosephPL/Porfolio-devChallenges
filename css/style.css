@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+:root {
+    --color-bg: #4f4f4f;
+    --color-card-bg: #eee;
+    --color-text: #4F4F4F;
+    --color-card-text: #828282;
+    --color-title: #333;
+    --color-btn: #2F80ED;
+    --color-btnhover: #11d178;
+}
+
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Montserrat','Arial', 'sans-serif';
+    color: var(--color-text);
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    background-color: var(--color-bg);
+}
+main {
+    display: flex;
+    width: 90%;
+
+    margin: 50px auto;
+}
+p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+h5 {
+    font-size: 1rem;
+    color: #E0E0E0;
+    padding-bottom: 20px;
+}
+.card , .card-project , .hobbies , .experiences , .card-blog , .card-tec{
+    background-color: var(--color-card-bg);
+    padding: 22px 10px;
+    border-radius: 12px;
+}
+.card , .hobbies , .experiences{
+    width: 370px;
+}
+.photo {
+    width: 340px;
+    height: 330px;
+    margin: auto;
+    background-image: url('../img/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+.card-title , .card-info , .card-text{
+    margin: 10px;
+}
+.card-title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card .card-title p , .card .card-text p {
+    color: var(--color-card-text);
+    font-size: 1.125rem;
+    margin-top: 5px;
+}
+.card-info {
+    padding: 10px 0;
+}
+.card-info p{
+    font-weight: 600;
+    margin-top: 5px;
+}
+.experiences , .hobbies {
+    margin-top: 15px;
+}
+.hobbie-img {
+    width: 100%;
+    height: 140px;
+    border-radius: 12px;
+    margin: auto;
+}
+.card-hobbie h4 {
+    font-size: 1.125rem;
+    color: var(--color-title);
+    font-weight: 600;
+}
+
+.gaming {
+    background-image: url('../img/gaming.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.cooking {
+    background-image: url('../img/davide-cantelli-jpkfc5_d-DI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.biking {
+    background-image: url('../img/kbo-bike-V5Xvf06MdYI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-experiences {
+    display: grid;
+    grid-template-columns: 70px auto 10px;
+}
+.experiences-img {
+    width: 70px;
+    height: 70px;
+    grid-column: 1;
+}
+.experiences-img img{
+    width: 100%;
+    padding-top: 8px;
+}
+.experiences .card-title p {
+    font-size: 0.875rem;
+    color: var(--color-card-text);
+    padding-bottom: 10px;
+    grid-column: 2/3;
+}
+.experiences .card-text {
+    color: var(--color-card-text);
+    width: 270px;
+    grid-column: 2/3;
+}
+.skills {
+    width: 800px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-tec {
+    width: 48%;
+}
+
+.card-tec:nth-child(2) {
+    height: 140px;
+}
+.card-tec h2 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.card-tec .content {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.skills .card-tec .info {
+    padding: 1px;
+    width: 30%;
+}
+.card-tec .progress-line {
+    position: relative;
+    height: 10px;
+    margin-top: 7px;
+    width: 65%;
+    background-color: #C4C4C4;
+    border-radius: 12px;
+}
+.card-tec .progress-line span{
+    background-color: #2F80ED;
+    border-radius: 12px;
+    height: 100%;
+    /* width: 80%; */
+    position: absolute;
+}
+.card-tec .progress-line.react span{
+    width: 60%;
+}
+.card-tec .progress-line.js span{
+    width: 90%;
+}
+.card-tec .progress-line.css span{
+    width: 90%;
+}
+.card-tec .progress-line.vue span{
+    width: 60%;
+}
+.card-tec .progress-line.redux span{
+    width: 80%;
+}
+.card-tec .progress-line.reactNative span{
+    width: 90%;
+}
+.card-tec .progress-line.figma span{
+    width: 70%;
+}
+.card-tec .progress-line.ps span{
+    width: 90%;
+}
+.bar {
+    width: 800px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: var(--color-card-bg);
+}
+.bar p {
+    padding: 14px;
+}
+
+.card-project , .card-blog {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 800px;
+}
+.img-project {
+    width: 210px;
+    height: 200px;
+    margin: 0 22px;
+    border-radius: 12px;
+}
+.img-project img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.card-description {
+    width: 520px;
+}
+.project .tecnology{
+    display: flex;
+}
+.project .tecnology p{
+    padding-left: 10px;
+}
+.project .card-title h2 , .blog .card-title h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-title);
+}
+.project .card-text p {
+    color: var(--color-card-text);
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 0;
+    border-radius: 12px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+.demo {
+    background-color: var(--color-btn);
+    border: solid 1px var(--color-btn);
+    transition: all .3s ease;
+}
+.demo a{
+    padding: 10px 40px;
+    color: var(--color-card-bg);
+}
+.demo:hover {
+    border: solid 1px var(--color-btnhover);
+    background-color: var(--color-btnhover);
+}
+
+.code {
+    border: solid 1px var(--color-btn);
+    transition: border .3s ease;
+}
+.code a {
+    padding: 10px 40px;
+    color: var(--color-btn);
+    transition: color .3s ease;
+}
+.code:hover {
+    border: solid 1px var(--color-btnhover);
+}
+.code a:hover {
+    color: var(--color-btnhover);
+}
+
+.card-desc {
+    width: 50%;
+}
+.blog .card-title h2 {
+    width: 183px;
+}
+.blog .card-text p {
+    margin-bottom: 22px;
+    color: var(--color-card-text);
+}
+.blog .card-text a {
+    color: var(--color-btn);
+}
+.img-blog {
+    width: 467px;
+    height: 357px;
+}
+.img-blog img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+footer p {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var( --color-card-text);
+}
